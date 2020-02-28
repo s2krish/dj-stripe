@@ -69,7 +69,14 @@ class Account(StripeModel):
     email = models.CharField(
         max_length=255, help_text="The primary user’s email address."
     )
-    # TODO external_accounts = ...
+    external_accounts = JSONField(
+        null=True,
+        blank=True,
+        help_text=(
+            "Information about external account (bank or card). "
+        ),
+    )
+
     individual = JSONField(
         null=True,
         blank=True,
