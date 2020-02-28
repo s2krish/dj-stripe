@@ -10,7 +10,7 @@ import djstripe.fields
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("djstripe", "0006_invoice_status"),
+        ("djstripe", "0007_update_invoice_subscription_models"),
     ]
 
     operations = [
